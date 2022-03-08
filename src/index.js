@@ -1,4 +1,6 @@
-import _ from 'lodash';
+ const _ = require('lodash');
+ const utils = require('./utils');
+
 
 function component() {
   const element = document.createElement('div');
@@ -10,3 +12,4 @@ function component() {
 }
 
 document.body.appendChild(component());
+utils.sayHello('hello world');
